@@ -1,0 +1,49 @@
+/* CSS Document */
+#content-slider{ width:380px; position:relative;}
+.editable .detalle-right img{ border:1px solid #E3E3E3; margin: 0; }
+#content{ position:relative;}
+
+#gallery-right #content-slider img{ width:100px; height:auto;}
+
+#slider{
+	margin: 10px auto 0;
+}
+#slider ul{ overflow:hidden; }
+#slider ul, #slider li{
+	margin:0;
+	padding:0;
+	list-style-image: none;
+	list-style-type: none;
+}
+#slider li{
+	width: 312px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+#slider li a{
+	margin: 0 2px;
+	text-decoration: none;
+	float: left;
+}
+#prevBtn, #nextBtn{
+	text-indent: -8000px;
+	display: block;
+	overflow: hidden;
+	width: 28px;
+	height: 100px;
+	position: absolute;
+	top: 0;
+}
+#prevBtn{ left: 0px;}	
+#nextBtn{ right: 0px; }														
+#prevBtn a, #nextBtn a{
+	display: block;
+	width: 28px;
+	height: 105px;
+}
+#prevBtn{ background: #d6d6d8; }
+#nextBtn{ background: #d6d6d8; }	
+
+#prevBtn a{ background: #d6d6d8 url(../../carousel/prev.gif) center center no-repeat;}
+#nextBtn a{ background: #d6d6d8 url(../../carousel/next.gif) center center no-repeat;}	

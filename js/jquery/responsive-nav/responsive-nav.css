@@ -1,0 +1,132 @@
+/*! responsive-nav.js v1.0.14 by @viljamis */
+
+#nav ul {
+	margin: 0;
+	padding: 0;
+	display: block;
+	list-style-image: none;
+	list-style-type: none;
+}
+.js #nav {
+  max-height: 0;
+  position: absolute;
+  display: block;
+  zoom: 1;
+}
+#nav-toggle{
+	background: url(/imagenes/template/btn-menu.png) 0 0 no-repeat;
+	text-indent: -9000px;
+	display: block;
+	width: 40px;
+	height: 30px;
+	position: absolute;
+	top: 50px;
+	right: 8px;
+	z-index: 5;
+	border-radius: 3px;
+}
+@media screen and (min-width: 851px) {
+.js #nav {
+	position: absolute !important;
+	max-height: none;
+	right:0;
+	bottom:0;
+}
+#nav-toggle {display: none;}
+#nav li{
+	font-size: 14px;
+	line-height: 60px;
+	/*text-shadow: 3px 3px 2px rgba(150, 150, 150, 0.8);*/
+	float: left;
+	margin: 0 0 0 4px;
+}
+#nav li a, #nav li a:visited{
+	color: #fff;
+    font-size: 11.5pt;
+    font-size: 0.96rem;
+    font-weight: 800;
+    display: block;
+    padding: 0 15px;
+	-webkit-transition: all 180ms ease-in-out;
+-moz-transition: all 180ms ease-in-out;
+-ms-transition: all 180ms ease-in-out;
+-o-transition: all 180ms ease-in-out;
+transition: all 180ms ease-in-out;
+}
+#nav li a:hover,#nav li.current a{
+	background-color: rgba(0, 0, 0, .7);
+	text-decoration: none;
+}
+#nav li.current a,#nav li.current a:visited{ cursor:default;}
+#nav ul li ul{
+	display:none;
+	position:absolute;
+	background-color: rgba(0, 0, 0, .6);
+	padding:10px 20px;
+}
+#nav ul li:hover ul{
+	display:block;
+}
+#nav ul li ul li{
+	display:block;
+	float:none;
+}
+#nav ul li ul li{
+	line-height:40px;
+	margin-left:0;
+}
+}
+
+
+/********** RESPONSIVE **********/
+@media screen and (max-width: 996px) {
+#nav li{
+
+}
+}
+
+
+@media screen and (max-width: 850px) {
+.js #nav {
+  clip: rect(0 0 0 0);
+}
+#nav {
+	z-index: 4;
+	top:0;
+	left:0;
+	overflow:visible;
+}
+#nav > ul{
+	width: 100%;
+	min-height: 100%;
+	padding: 0 10px 5px;
+	z-index: 4;
+	background-color: #ededed;
+	position: absolute;
+	top: 80px;
+	left: 0;
+	overflow: visible;
+	border-top: 4px solid #dddddd;
+}
+#nav li{
+	font-size: 1.3em;
+	line-height:34px;
+	height:auto;
+	margin:0;
+	padding:0;
+	border-top: 1px solid #dddddd;
+}
+#nav li a{
+	color: #333333;
+	width: auto;
+	padding: 0;
+	display: block;
+	text-decoration: none;
+	padding: 0 14px;
+}
+#nav li a:hover{ box-shadow: 0 0 12px #387bbe;}
+#nav ul li ul{
+	padding-left:30px;
+}
+#nav ul li ul a{ font-size:0.8rem !important;}
+}

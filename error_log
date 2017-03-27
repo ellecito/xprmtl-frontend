@@ -1,0 +1,16 @@
+[12-Feb-2017 12:27:06 America/Santiago] PHP Parse error:  syntax error, unexpected '=', expecting ')' in /home/victorjarpa/public_html/application/modules/inicio/controllers/inicio.php on line 25
+[12-Feb-2017 12:27:24 America/Santiago] PHP Parse error:  syntax error, unexpected '=', expecting ')' in /home/victorjarpa/public_html/application/modules/inicio/controllers/inicio.php on line 25
+[19-Feb-2017 14:16:07 America/Santiago] PHP Parse error:  syntax error, unexpected '=>' (T_DOUBLE_ARROW) in /home/victorjarpa/public_html/application/modules/productos/controllers/productos.php on line 32
+[21-Feb-2017 22:00:49 America/Santiago] PHP Fatal error:  Call to a member function model() on null in /home/victorjarpa/public_html/application/libraries/layout.php on line 50
+[21-Feb-2017 22:34:51 America/Santiago] PHP Fatal error:  Call to a member function obtener() on null in /home/victorjarpa/public_html/application/modules/productos/controllers/productos.php on line 29
+[26-Feb-2017 22:26:19 America/Santiago] PHP Parse error:  syntax error, unexpected '"pr_codigo"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/victorjarpa/public_html/application/modules/carro/controllers/carro.php on line 193
+[26-Feb-2017 22:52:05 America/Santiago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/victorjarpa/public_html/application/modules/carro/controllers/carro.php on line 215
+[26-Feb-2017 22:52:28 America/Santiago] PHP Fatal error:  require_once(): Failed opening required '../libwebpay/webpay.php' (include_path='.:/opt/php56/lib/php') in /home/victorjarpa/public_html/application/modules/carro/views/webpay.php on line 12
+[26-Feb-2017 22:56:38 America/Santiago] PHP Fatal error:  require_once(): Failed opening required '/home/victorjarpa/public_htmlapplication/libraries/webpay/webpay.php' (include_path='.:/opt/php56/lib/php') in /home/victorjarpa/public_html/application/modules/carro/views/webpay.php on line 12
+[02-Mar-2017 19:01:48 America/Santiago] PHP Fatal error:  Cannot redeclare class Modelo_pedidos in /home/victorjarpa/public_html/application/modules/carro/models/modelo_bitacora.php on line 80
+[02-Mar-2017 19:02:32 America/Santiago] PHP Fatal error:  Call to a member function getLastId() on null in /home/victorjarpa/public_html/application/modules/carro/views/webpay.php on line 110
+[02-Mar-2017 19:03:14 America/Santiago] PHP Fatal error:  Call to a member function getLastId() on null in /home/victorjarpa/public_html/application/modules/carro/views/webpay.php on line 110
+[02-Mar-2017 21:46:24 America/Santiago] PHP Fatal error:  Cannot use object of type stdClass as array in /home/victorjarpa/public_html/application/modules/inicio/views/inicio.php on line 33
+[02-Mar-2017 22:40:22 America/Santiago] PHP Parse error:  syntax error, unexpected '$this' (T_VARIABLE) in /home/victorjarpa/public_html/application/modules/carro/controllers/carro.php on line 211
+[03-Mar-2017 15:28:09 America/Santiago] PHP Parse error:  syntax error, unexpected ':' in /home/victorjarpa/public_html/application/libraries/layout.php on line 77
+[05-Mar-2017 14:05:09 America/Santiago] PHP Fatal error:  Call to undefined method Email::enviar() in /home/victorjarpa/public_html/application/modules/registro/controllers/registro.php on line 87

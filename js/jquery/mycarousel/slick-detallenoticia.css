@@ -1,0 +1,228 @@
+/* Slider */
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+#wrapper-mensajes-nav .slick-slider{ display:inline-block;}
+.slick-list
+{
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+	margin-bottom:12px;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+	width:100%;
+	height:auto;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+	padding:2px;
+}
+
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+
+.slick-prev, .slick-next{
+	position: absolute;
+    border: none;
+    text-indent: -999999px;
+    width: 55px;
+    border: 1px solid #000;
+    height: 35px;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: all 180ms ease-in-out;
+    -moz-transition: all 180ms ease-in-out;
+    -ms-transition: all 180ms ease-in-out;
+    -o-transition: all 180ms ease-in-out;
+    transition: all 180ms ease-in-out;
+}
+
+
+.slick-prev{
+	background: url(arrow-left2.png) no-repeat center center;
+	left:2px;
+}
+.slick-next{
+	background: url(arrow-right2.png) no-repeat center center;
+	left:56px;
+}
+.slick-prev:hover, .slick-next:hover{
+	opacity: 0.70;
+	filter: alpha(opacity =70);
+}
+
+
+
+.slick-dots {
+  
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin:12px 0 0 !important;
+  list-style: none;
+  text-align: center;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 -2px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 45px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  color: #a6a6a6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+  color: #000;
+}
+.slick-dots li button:hover:before, .slick-dots li button:focus:before {
+  color: #000;
+}
+
+.slick-disabled{ opacity:.5; cursor:no-drop;}
+#vertical .slick-prev, #vertical .slick-next{
+	left:50%;
+	margin-left:-15px;
+}
+#vertical .slick-prev{ top:25px;}
+#vertical .slick-next{ bottom:0; top: inherit;}
+#vertical .slick-prev{
+	background:#2b307f url(arrow-up.png) no-repeat 7px center;
+}
+#vertical .slick-next{
+	background:#2b307f url(arrow-down.png) no-repeat 7px center;
+}
+#vertical .slick-prev:hover{
+	background:#db1715 url(arrow-up.png) no-repeat 7px center;
+}
+#vertical .slick-next:hover{
+	background:#db1715 url(arrow-down.png) no-repeat 7px center;
+}
+
+.galeria-single-portada .slick-dots{  bottom: -32px !important;}
